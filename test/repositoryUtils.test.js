@@ -1,6 +1,5 @@
 const { filterRepositoriesWithMoreThanFiveStars } = require('../src/repositoryUtils.js');
 
-
 describe('filterRepositoriesWithMoreThanFiveStars', () => {
     describe('when it receives an array of objects', () => {
     test('Return repositories with more than 5 stars', () => {
@@ -22,7 +21,6 @@ describe('filterRepositoriesWithMoreThanFiveStars', () => {
     });
 
     test('Return an empty array if no repositories have more than 5 stars', () => {
-
     const repositories = [
         { id: 1, name: 'repo1', stargazers_count: 3 },
         { id: 2, name: 'repo2', stargazers_count: 5 },
@@ -107,4 +105,5 @@ describe('sumOfAllRepositoryStars', () => {
 
     expect(totalStars).toBe(0);
     });
-});
+})
+

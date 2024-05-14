@@ -2,13 +2,11 @@
 import dotenv from 'dotenv';
 
 import fs from 'fs';
-
 dotenv.config()
-const TOKEN = process.env.GITHUB_TOKEN;
+
 const BASEURL= 'https://api.github.com';
 const ORG_NAME = 'stackbuilders';
 const BASE_URL_ORG = `https://api.github.com/orgs/${ORG_NAME}/repos`;
-
     export async function testConnection(token) {
     if (!token) {
         console.error('No se ha proporcionado un token de acceso. Configure la variable de entorno GITHUB_TOKEN.');
@@ -40,7 +38,6 @@ const BASE_URL_ORG = `https://api.github.com/orgs/${ORG_NAME}/repos`;
         return false;
     }
 }
-
 export async function getRepositories(authToken) {
     try {
         const response = await fetch(BASE_URL_ORG, {
