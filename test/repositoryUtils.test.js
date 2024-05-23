@@ -14,7 +14,7 @@ import {
 
 describe("filterRepositoriesWithMoreThanFiveStars", () => {
   describe("when it receives an array of objects", () => {
-    it("should return repositories with more than 5 stars", () => {
+    it("returns repositories with more than 5 stars", () => {
       const filteredRepositories =
         filterRepositoriesWithMoreThanFiveStars(mockedRepositories);
 
@@ -24,7 +24,7 @@ describe("filterRepositoriesWithMoreThanFiveStars", () => {
       ]);
     });
 
-    it("should return an empty array if no repositories have more than 5 stars", () => {
+    it("returns an empty array if no repositories have more than 5 stars", () => {
       const filteredRepositories = filterRepositoriesWithMoreThanFiveStars([]);
 
       expect(filteredRepositories).to.deep.equal([]);
@@ -34,7 +34,7 @@ describe("filterRepositoriesWithMoreThanFiveStars", () => {
 
 describe("getLastFiveUpdatedRepositories", () => {
   describe("when it receives an array of objects", () => {
-    it("should return the last 5 updated repositories", () => {
+    it("returns the last 5 updated repositories", () => {
       const lastFiveUpdatedRepositories = getLastFiveUpdatedRepositories(
         mockedRepositoriesFull,
       );
@@ -73,7 +73,7 @@ describe("getLastFiveUpdatedRepositories", () => {
       ]);
     });
 
-    it("should return all repositories if there are less than 5", () => {
+    it("returns all repositories if there are less than 5", () => {
       const lastFiveUpdatedRepositories = getLastFiveUpdatedRepositories(
         mockedRepositoriesLess,
       );
@@ -85,13 +85,13 @@ describe("getLastFiveUpdatedRepositories", () => {
 
 describe("sumOfAllRepositoryStars", () => {
   describe("when it receives an array of objects", () => {
-    it("should return the sum of all repository stars", () => {
+    it("returns the sum of all repository stars", () => {
       const totalStars = sumOfAllRepositoryStars(mockedRepositories);
 
       expect(totalStars).to.equal(10 + 5 + 8);
     });
 
-    it("should return 0 if there are no repositories", () => {
+    it("returns 0 if there are no repositories", () => {
       const totalStars = sumOfAllRepositoryStars([]);
 
       expect(totalStars).to.equal(0);

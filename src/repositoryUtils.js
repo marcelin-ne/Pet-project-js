@@ -1,16 +1,12 @@
 export function summarizeRepositories(repositories) {
-  const summarizedRepositories = [];
-
-  for (const key in repositories) {
-    const repo = repositories[key];
-    const summarizedRepo = {
-      id: repo.id,
-      name: repo.name,
-      updated_at: repo.updated_at,
-      stargazers_count: repo.stargazers_count,
-    };
-    summarizedRepositories.push(summarizedRepo);
-  }
+  const summarizedRepositories = repositories.map(repository => {
+    return {
+      id: repository.id,
+      name: repository.name,
+      updated_at: repository.updated_at,
+      stargazers_count: repository.stargazers_count,
+    }
+  } )
 
   return summarizedRepositories;
 }
