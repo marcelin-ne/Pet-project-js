@@ -1,17 +1,16 @@
-
 //Factory to create Errors
 
 const createErrorFactory = function (name) {
-    return class CustomizedError extends Error {
-        constructor(message){
-        super(message)
-        this.name=name 
+  return class CustomizedError extends Error {
+    constructor(message) {
+      super(message);
+      this.name = name;
     }
-    }
-}
+  };
+};
 
-export const ConnectionError = createErrorFactory('ConnectionError');
-export const ValidationError = createErrorFactory('ValidationError');
+export const ConnectionError = createErrorFactory("ConnectionError");
+export const ValidationError = createErrorFactory("ValidationError");
 
 // Create Individual Class Errors
 

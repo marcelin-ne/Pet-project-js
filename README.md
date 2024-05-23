@@ -1,4 +1,4 @@
-# Github Repository Pet Project with Javascript 
+# Github Repository Pet Project with Javascript
 
 GitHub Data Retriever is a small application that retrieves data from the Stack Builders organization on GitHub using GitHub's public API. The application displays:
 
@@ -13,27 +13,29 @@ GitHub Data Retriever is a small application that retrieves data from the Stack 
 - Includes unit tests and test coverage.
 - Unit tests use preprocessed data and do not connect to GitHub.
 
-
 ## Installation
 
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/marcelin-ne/Pet-project-js.git
-    ```
+
+   ```sh
+   git clone https://github.com/marcelin-ne/Pet-project-js.git
+   ```
 
 2. Navigate to the project directory:
-    ```sh
-    cd Pet-project-js
-    ```
+
+   ```sh
+   cd Pet-project-js
+   ```
 
 3. Install the dependencies using `yarn`:
-    ```sh
-    yarn install
-    ```
+   ```sh
+   yarn install
+   ```
 
 ## Testing
 
 To run the tests, use the following command:
+
 ```sh
 yarn test
 
@@ -41,3 +43,4 @@ yarn test
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+```
